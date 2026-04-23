@@ -1,4 +1,4 @@
-# MidtermProject-Basketball-Stats-with User login and mongodb database
+# MidtermProject-Basketball-Stats with User login and mongodb database
 Makes a table where you can add and edit stats from made up players. 
 This table can be used to input real player stats, make up stats, or input your own stats if you play pickup basketball.
 
