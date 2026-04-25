@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basketball Stats</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="text-center">Basketball Stats</h1>
+            <div class="mb-3">
+                <input type="text" id="username" class="form-control mb-2" placeholder="Username" />
+                <input type="password" id="password" class="form-control mb-2" placeholder="Password" />
+                <button id="register-btn" class="btn btn-secondary">Register</button>
+                <button id="login-btn" class="btn btn-primary">Login</button>
+            </div>
+
+            <button class="btn btn-success mb-3" data-toggle="modal" data-target="#addPlayerModal">Add Player</button>
+            <table class="table table-striped" id="player-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                        <th>Rebounds</th>
+                        <th>Assists</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="player-table-body"></tbody>
+            </table>
+        </div>
+
+    <!-- Add Player Modal -->
+        <div class="modal fade" id="addPlayerModal" tabindex="-1" role="dialog" aria-labelledby="addPlayerModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addPlayerModalLabel">Add Player</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="add-player-form">
+                        <input type="text" class="form-control mb-2" id="name" placeholder="Name" />
+                        <input type="text" class="form-control mb-2" id="team" placeholder="Team" />
+                        <input type="number" class="form-control mb-2" id="points" placeholder="Points" />
+                        <input type="number" class="form-control mb-2" id="rebounds" placeholder="Rebounds" />
+                        <input type="number" class="form-control mb-2" id="assists" placeholder="Assists" />
+                        <button type="submit" class="btn btn-primary">Add Player</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/frontend/script.js" defer>
+        </script>
+    </body>
+</html>
